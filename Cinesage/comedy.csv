@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Comedy Movies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        .movie-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .movie-card {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+        }
+        .movie-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .movie-title {
+            font-size: 18px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .movie-description {
+            font-size: 14px;
+            color: #555;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Comedy Movies</h1>
+        <p>Laugh out loud with our selection of comedy movies!</p>
+    </div>
+
+    <div class="movie-list">
+        <div class="movie-card">
+            <img src="movie1.jpg" alt="Movie 1">
+            <div class="movie-title">The Hangover</div>
+            <div class="movie-description">A wild adventure after a bachelor party gone wrong.</div>
+        </div>
+        <div class="movie-card">
+            <img src="movie2.jpg" alt="Movie 2">
+            <div class="movie-title">Superbad</div>
+            <div class="movie-description">Two teens on a mission to have a good time before graduation.</div>
+        </div>
+        <div class="movie-card">
+            <img src="movie3.jpg" alt="Movie 3">
+            <div class="movie-title">Dumb and Dumber</div>
+            <div class="movie-description">A hilarious road trip with two incredibly dim-witted friends.</div>
+        </div>
+        <div class="movie-card">
+            <img src="movie4.jpg" alt="Movie 4">
+            <div class="movie-title">Anchorman</div>
+            <div class="movie-description">A funny look at the world of news anchors in the 70s.</div>
+        </div>
+        <div class="movie-card">
+            <img src="movie5.jpg" alt="Movie 5">
+            <div class="movie-title">21 Jump Street</div>
+            <div class="movie-description">Two cops go undercover in high school to solve a drug problem.</div>
+        </div>
+        <div class="movie-card">
+            <img src="movie6.jpg" alt="Movie 6">
+            <div class="movie-title">Step Brothers</div>
+            <div class="movie-description">Two grown men become stepbrothers and cause chaos.</div>
+        </div>
+    </div>
+
+</body>
+</html>
