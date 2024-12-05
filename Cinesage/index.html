@@ -1,1 +1,115 @@
-kuch
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinesage - Movie Discovery</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .welcome {
+            text-align: center;
+            margin: 20px auto;
+        }
+        .welcome p {
+            border: 2px outset red;
+            background-color: lightblue;
+            color: black;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+        .welcome img {
+            display: block;
+            margin: 20px auto;
+        }
+        .myDiv {
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: center;
+            padding: 20px;
+            margin: 20px auto;
+            width: 300px;
+            border-radius: 10px;
+        }
+        .myDiv input {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 80%;
+            font-size: 1rem;
+        }
+        .myDiv button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .myDiv button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="welcome">
+        <p>Welcome to Cinesage! 🎥✨</p>
+        <p>Discover a world of movies crafted just for you. Whether you're in the mood for action, romance, or a hidden gem, we've got you covered. Let us help you find the perfect pick for your next movie night!</p>
+        <img src="pic.png" alt="Cinesage Logo">
+    </div>
+
+    <div class="myDiv">
+        <h1><b>Login</b></h1>
+        <input type="email" id="email" placeholder="Enter your email address">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button id="signInBtn">Sign in</button>
+        <p id="message" style="color: red; font-size: 0.9rem;"></p>
+    </div>
+
+    <script>
+        // Sample credentials for authentication
+        const validEmail = "maitydebjyoti103@gmail.com";
+        const validPassword = "123";
+
+        
+      
+       
+
+
+        // Function to handle sign-in
+        document.getElementById("signInBtn").addEventListener("click", function() {
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const message = document.getElementById("message");
+
+            // Authentication logic
+            if (email === validEmail||validEmail2 && password === validPassword||validPassword2) {
+                message.style.color = "green";
+                message.textContent = "Login successful! Redirecting...";
+                setTimeout(() => {
+                    window.location.href = "login.html"; // Redirect to the login.htm page
+                }, 2000);
+            }
+            else if(email === validEmail1 && password === validPassword1) {
+                message.style.color = "green";
+                message.textContent = "Login successful! Redirecting...";
+                setTimeout(() => {
+                    window.location.href = "login.html"; // Redirect to the login.htm page
+                }, 2000);
+            }
+            else {
+                message.style.color = "red";
+                message.textContent = "Invalid email or password. Please try again.";
+            }
+        });
+    </script>
+
+</body>
+</html>
